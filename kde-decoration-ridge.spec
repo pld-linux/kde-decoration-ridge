@@ -3,7 +3,7 @@ Summary:	Kwin decoration - %{_decoration}
 Summary(pl):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
 Source0:	http://kde-look.org/content/files/10429-%{_decoration}-%{version}.tar.bz2
@@ -43,16 +43,18 @@ zaznaczenia.
 %build
 cp -f %{_datadir}/automake/config.sub admin
 export UNSERMAKE=%{_datadir}/unsermake/unsermake
-%{__make} cvs -f admin/Makefile.common
+%{__make} -f Makefile.dist
 
-%configure
+%configure \
+	--with-qt-libraries=%{_libdir}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir="%{_kdedocdir}"
 
 %clean
 rm -rf $RPM_BUILD_ROOT
