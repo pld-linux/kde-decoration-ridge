@@ -1,6 +1,6 @@
 %define		_decoration 	ridge
 Summary:	Kwin decoration - %{_decoration}
-Summary(pl):	Dekoracja kwin - %{_decoration}
+Summary(pl.UTF-8):   Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	0.3.1
 Release:	2
@@ -21,12 +21,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A kwin window decoration with flat, square buttons.
 
-%description -l pl
-Dekoracja kwin z p�askimi, kwadratowymi przyciskami.
+%description -l pl.UTF-8
+Dekoracja kwin z płaskimi, kwadratowymi przyciskami.
 
 %package -n kde-colorscheme-%{_decoration}
 Summary:	Color scheme for KDE style - %{_decoration}
-Summary(pl):	Schemat kolor�w do stylu KDE - %{_decoration}
+Summary(pl.UTF-8):   Schemat kolorów do stylu KDE - %{_decoration}
 Group:		Themes
 Requires:	kdebase-core
 
@@ -34,8 +34,8 @@ Requires:	kdebase-core
 A gray colorscheme with blue window title and light yellow selection
 background.
 
-%description -n kde-colorscheme-%{_decoration} -l pl
-Szary schemat kolor�w z niebieskim tytu�em okna oraz ��tym t�em
+%description -n kde-colorscheme-%{_decoration} -l pl.UTF-8
+Szary schemat kolorów z niebieskim tytułem okna oraz żółtym tłem
 zaznaczenia.
 
 %prep
