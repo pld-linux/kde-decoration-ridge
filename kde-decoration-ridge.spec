@@ -1,6 +1,6 @@
 %define		_decoration 	ridge
 Summary:	Kwin decoration - %{_decoration}
-Summary(pl.UTF-8):   Dekoracja kwin - %{_decoration}
+Summary(pl.UTF-8):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	0.3.1
 Release:	2
@@ -26,7 +26,7 @@ Dekoracja kwin z płaskimi, kwadratowymi przyciskami.
 
 %package -n kde-colorscheme-%{_decoration}
 Summary:	Color scheme for KDE style - %{_decoration}
-Summary(pl.UTF-8):   Schemat kolorów do stylu KDE - %{_decoration}
+Summary(pl.UTF-8):	Schemat kolorów do stylu KDE - %{_decoration}
 Group:		Themes
 Requires:	kdebase-core
 
